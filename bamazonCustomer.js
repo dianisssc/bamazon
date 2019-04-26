@@ -99,3 +99,22 @@ function continuePrompt() {
 //Item selection and Quantity desired
 
 }
+
+function selectionPrompt() {
+
+    inquirer.prompt([{
+
+            type: "input",
+            name: "inputId",
+            message: "Please enter the ID number of the item you would like to purchase.",
+        },
+        {
+            type: "input",
+            name: "inputNumber",
+            message: "How many units of this item would you like to purchase?",
+
+        }
+    ]).then(function(userPurchase) {
+
+    })
+}
